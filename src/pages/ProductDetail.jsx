@@ -1,4 +1,4 @@
-import React ,{useState, useEffect}from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { Button, Card, Image } from 'semantic-ui-react'
 import ProductService from '../services/productService';
@@ -25,7 +25,7 @@ export default function ProductDetail() {
                             src='https://react.semantic-ui.com/images/avatar/large/steve.jpg'
                         />
                         <Card.Header>{product.productName}</Card.Header>
-                        <Card.Meta>Friends of Elliot</Card.Meta>
+                        <Card.Meta>{product.category.categoryName}</Card.Meta>
                         <Card.Description>
                             Steve wants to add you to the group <strong>best friends</strong>
                         </Card.Description>
